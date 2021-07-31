@@ -16,11 +16,9 @@
 queens_coords = [int(input()) for _ in range(2)]
 point_coords = [int(input()) for _ in range(2)]
 
-if (queens_coords[0] == point_coords[0] and queens_coords[1] != point_coords[1]) or (queens_coords[0] != point_coords[0]
-                                                                                     and queens_coords[1] ==
-                                                                                     point_coords[1]) or abs(
-    queens_coords[0] - point_coords[0]) == abs(queens_coords[1] -
-                                               point_coords[1]):
+if (queens_coords[0] == point_coords[0] and queens_coords[1] != point_coords[1]) or \
+        (queens_coords[0] != point_coords[0] and queens_coords[1] == point_coords[1]) or \
+        abs(queens_coords[0] - point_coords[0]) == abs(queens_coords[1] - point_coords[1]):
     print("YES")
 else:
     print("NO")
